@@ -264,6 +264,7 @@ def ramp(x, phase=0):
 def generate_in_tempo(gan_video_synth, bpm=120, num_beats=16, classes=[309], y_scale=1, truncation=1,
                       random_label=False, ext=None, fps=30, axis_sets=None, magnitudes=None, periods=None,
                       funcs=None, quantize_label=False):
+  pdb.set_trace()
   
   duration = 1 / bpm * num_beats * 60
   num_frames = int(duration * fps)
