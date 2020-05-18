@@ -17,6 +17,9 @@ classes = [398, 402]
 # I added this arbitrarily
 y_scale = 1
 
+# file format to dump output to
+ext = '.mp4'
+
 kwargs = {
     'bpm':bpm,
     'magnitudes':None,
@@ -27,8 +30,8 @@ kwargs = {
     'quantize_label':None,
     'y_scale':y_scale, 
     'periods':None, 
-    'num_beats':num_beats
-    
+    'num_beats':num_beats,
+    'ext':ext
 }
 
 generate_in_tempo(gvs, **kwargs)
