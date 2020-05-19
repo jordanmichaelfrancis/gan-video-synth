@@ -22,7 +22,7 @@ ext = '.mp4'
 
 kwargs = {
     'bpm':bpm,
-    'magnitudes':None,
+    'magnitudes':[1,1],
     'funcs':None, 
     'axis_sets':None,
     'random_label':None, 

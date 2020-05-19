@@ -358,6 +358,7 @@ def generate_in_tempo(gan_video_synth, bpm=120, num_beats=16, classes=[309], y_s
     for ax in ax_set:
       zs[:, ax] += func(np.linspace(0, 1.0 / period * num_beats * TAU, num=num_frames + 1)[:num_frames]) * mag
 
+  pdb.set_trace()
   # Generate images
   ims = gan_video_synth.sample(zs, ys, truncation=truncation, batch_size=1)
   # Transform
