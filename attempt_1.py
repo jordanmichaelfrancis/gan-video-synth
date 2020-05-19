@@ -14,22 +14,12 @@ num_beats = 16
 # ImageNet class IDs to include in the y vector.
 classes = [398, 402]
 
-# I added this arbitrarily
-y_scale = 1
-
 # file format to dump output to
 ext = '.mp4'
 
 kwargs = {
     'bpm':bpm,
-    'magnitudes':[1,1],
-    'funcs':None, 
-    'axis_sets':None,
-    'random_label':None, 
     'classes':classes, 
-    'quantize_label':None,
-    'y_scale':y_scale, 
-    'periods':None, 
     'num_beats':num_beats,
     'ext':ext
 }
